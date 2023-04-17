@@ -106,7 +106,7 @@ html,body{
     color: wheat;
 }
 .header__logotype{
-    width: 8%;
+    width: 14%;
 }
 
 .wallet__but{
@@ -161,9 +161,14 @@ html,body{
 }
 
 /*Media for header*/
+@media (max-width: 1200px) {
+    .header__logotype{
+        width: 16%;
+    }
+    }
 @media (max-width: 1000px) {
     .header__logotype{
-        width: 10%;
+        width: 18%;
     }
     }
 @media (max-width: 790px) {
@@ -275,7 +280,7 @@ html,body{
     .wallet__but{
         font-size: 24px;
         position: relative;
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
         z-index: 5;
     }
@@ -298,17 +303,27 @@ html,body{
         width: 25%;
     }
     .header__logo{
-        left: 40px;
+        left: 10%;
         top: 4px;
         width: 70%;
     }
 }
+@media (max-width: 600px) {
+    .header__logotype{
+        width: 35%;
+    }
+    }
+@media (max-width: 500px) {
+    .header__logotype{
+        width: 45%;
+    }
+    }
 @media (max-width: 400px) {
     .header__logo,.header__burger{
         left: 0;
     }
     .header__logotype{
-        width: 40%;
+        width: 55%;
     }
     .header__text{
         font-size: 35px;
