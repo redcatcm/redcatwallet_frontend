@@ -15,3 +15,18 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+
+  const popupContainer = document.getElementById('popup-container');
+  const closeLink = document.getElementById('close');
+  
+  function openPopup() {
+    popupContainer.style.display = 'flex';
+  }
+  
+  function closePopup() {
+    popupContainer.style.display = 'none';
+  }
+  
+  closeLink.addEventListener('click', closePopup);
+  
