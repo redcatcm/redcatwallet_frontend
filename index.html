@@ -100,7 +100,7 @@
                 <button class="become__partner" id="open-popup" onclick="openPopup()">BECOME A PARTNER</button>
                 <div id="popup-container">
                   <div id="popup">
-                    <form method="post" action="#">
+                    <form method="post" action="send_email.php">
                         <h1 class="partner__h1">Become a partner</h1>
                         <label>Your telegram:</label>
                         <input type="text"name="telegram" required><br>
@@ -152,23 +152,3 @@
    <script src="main.js"></script>
 </body>
 </html>
-
-<script>
-    const form = document.querySelector('#contact-form');
-    form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'send_email.php');
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-        alert('Thank you for contacting us. We will contact you shortly!');
-        form.reset();
-        } else {
-        alert('There was an error. Please try again later.');
-        }
-    };
-    xhr.send(formData);
-    });
-
-</script>
