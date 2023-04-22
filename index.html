@@ -97,7 +97,27 @@
                     <img src="img/exonHor.png" alt="" class="partners__logo">
                 </a>
             </div>
-            <a href="partner.html" class="become__partner">BECOME A PARTNER</a>
+                <button class="become__partner" id="open-popup" onclick="openPopup()">BECOME A PARTNER</button>
+                <div id="popup-container">
+                  <div id="popup">
+                    <form method="post" action="#">
+                        <h1 class="partner__h1">Become a partner</h1>
+                        <label>Your telegram:</label>
+                        <input type="text"name="telegram" required><br>
+                    
+                        <label>Your mail:</label>
+                        <input type="email" name="mail" required><br>
+                        
+                        <label>Link to your project:</label>
+                        <input type="url" name="link" required><br>
+                        
+                        <label>Briefly describe your project:</label>
+                        <textarea name="project_description" rows="5" required></textarea><br>
+                        
+                        <input type="submit" value="Submit">
+                        <a id="close" href="#open-popup" onclick="closePopup()">+</a>
+                  </div>
+                </div>
         </div>
       </section>
 
