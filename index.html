@@ -97,8 +97,12 @@
                     <img src="img/exonHor.png" alt="" class="partners__logo">
                 </a>
             </div>
-                <button class="become__partner" id="open-popup" onclick="openPopup()">BECOME A PARTNER</button>
-                <div id="popup-container">
+            <div class="button_not_available">
+                <button class="become__partner" id="open-popup" onclick="showMessage()">BECOME A PARTNER</button>
+                <div id="message-container" class="message_container" style="display: none;">Temporarily unavailable</div>
+              </div>
+            </div>
+                <!-- <div id="popup-container">
                   <div id="popup">
                     <form method="post" action="send_email.php">
                         <h1 class="partner__h1">Become a partner</h1>
@@ -118,7 +122,7 @@
                         <a id="close" href="#open-popup" onclick="closePopup()">+</a>
                   </div>
                 </div>
-        </div>
+        </div> -->
       </section>
 
     <!-- Footer-->
