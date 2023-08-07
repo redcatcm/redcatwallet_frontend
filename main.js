@@ -14,19 +14,40 @@ function reveal() {
     }
   }
   
+  // window.addEventListener("scroll", reveal);
+
+
+  // const popupContainer = document.getElementById('popup-container');
+  // const closeLink = document.getElementById('close');
+  
+  // function openPopup() {
+  //   popupContainer.style.display = 'flex';
+  // }
+  
+  // function closePopup() {
+  //   popupContainer.style.display = 'none';
+  // }
+  
+  // closeLink.addEventListener('click', closePopup);
+
   window.addEventListener("scroll", reveal);
 
-
+  
   const popupContainer = document.getElementById('popup-container');
   const closeLink = document.getElementById('close');
-  
-  function openPopup() {
-    popupContainer.style.display = 'flex';
-  }
-  
-  function closePopup() {
-    popupContainer.style.display = 'none';
+  const messageContainer = document.getElementById('message-container');
+  const openButton = document.getElementById('open-popup');
+
+  function showMessage() {
+    messageContainer.style.display = 'block';
+    messageContainer.style.textAlign = 'center';
+    setTimeout(function() {
+      messageContainer.style.opacity = '70%'; // Fade in the message
+    }, 100); // Show the message container
   }
   
   closeLink.addEventListener('click', closePopup);
+  
+  
+
   
